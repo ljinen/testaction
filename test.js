@@ -15,7 +15,7 @@ const got = require('hooman');
 	let UAnum = Math.round(Math.random()*num);
 	let row = "row-" + UAnum;
 	//await console.log(row);
-	//await console.log(userAgents[UAnum]);
+	await console.log(userAgents[UAnum]);
 	
 	const browser = await chromium.launch();
 	const context = await browser.newContext({
@@ -32,7 +32,7 @@ const got = require('hooman');
 		await page.mouse.click(900, 335);
 		await page.mouse.click(900, 345);
 		await page.mouse.click(900, 365);
-		//console.log("click ad");
+		console.log("click ad");
 		await page.waitForTimeout(10000);
 	}	
 	await browser.close();
