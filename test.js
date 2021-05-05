@@ -31,8 +31,13 @@ const { chromium } = require('playwright');
 		//await page.frame(url="https://ad.a-ads.com/1618660?size=200x200").click('a');
 
 		await page.mouse.click(900, 335);
+		await page.mouse.click(900, 340);
 		await page.mouse.click(900, 345);
+		await page.mouse.click(900, 350);
+		await page.mouse.click(900, 355);
+		await page.mouse.click(900, 360);
 		await page.mouse.click(900, 365);
+		await page.mouse.click(900, 370);
 		console.log("click ad");
 		await page.waitForTimeout(10000);
 	}	
